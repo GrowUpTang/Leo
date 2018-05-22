@@ -1,0 +1,23 @@
+
+ git config --global user.email "1172120974@qq.com"
+  git config --global user.name "yingge0711"
+
+
+//创建分支   (xxx分支名称)
+1.git branch xxx   2.git checkout  xxx    3.git push origin xxx 
+
+//创建文件----提交文件
+1.git status    2.git add  .  3.git status  4.git commit    5.git push origin xxx
+git pull origin  xxx
+
+
+//git 命令合并分支（dev）
+1.git  checkout new_dev                     切换分支
+2.git  pull origin new_dev                  拉取dev代码
+3.git merge --no-ff new_dev_gezi            合并
+4.git status                                查看状态
+5.git push origin new_dev                   推送到dev
+6.git branch -d new_dev_gezi                删除dev_gezi(本地)
+7.git branch origin new_dev: new_dev_gezi   删除远程    (可以不执行)
+8.git fetch origin new_dev:new_dev_gezi     拉取dev的代码到自己的分支（执行这一步就ok）
+9.git checkout new_dev_gezi             切换分支 
