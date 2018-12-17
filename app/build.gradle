@@ -1,4 +1,8 @@
 apply plugin: 'com.android.application'
+/*////引用的library表示这是一个组件，而非主module(application)
+//apply plugin: 'com.android.library'
+////加入下面这段代码
+//apply plugin: 'com.jakewharton.butterknife'*/
 
 android {
     compileSdkVersion 26
@@ -25,4 +29,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'org.xclcharts:lib:2.4'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
