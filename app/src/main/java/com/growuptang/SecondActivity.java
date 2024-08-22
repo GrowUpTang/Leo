@@ -38,6 +38,9 @@ public class SecondActivity extends AppCompatActivity {
         items.add(new DataItem(1, "头条", "334.25", getColor(R.color.blue)));
         items.add(new DataItem(1, "IBM", "37.25", getColor(R.color.black)));
         items.add(new DataItem(2, "甲骨文", "30.25", getColor(R.color.yellow)));
+        items.add(new DataItem(2, "甲骨文", "30.25", getColor(R.color.yellow)));
+        items.add(new DataItem(2, "甲骨文", "30.25", getColor(R.color.yellow)));
+        items.add(new DataItem(2, "甲骨文", "30.25", getColor(R.color.yellow)));
         discView.setItems(items);
     }
 }
